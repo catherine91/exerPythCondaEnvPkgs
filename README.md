@@ -2,12 +2,12 @@
 
 ## Summary of steps to complete
 
-- [ ] Fork this repository so you have your own copy to work on.
-- [ ] Clone the repository on your local machine. 
-- [ ] Edit this README.md file on your machine.
-- [ ] Run the Conda commands shown in the video and describe them in the table below.
-- [ ] Push your changes to your GitHub repository.
-- [ ] Submit a link to this GitHub repository in Canvas.
+- [x] Fork this repository so you have your own copy to work on.
+- [x] Clone the repository on your local machine. 
+- [x] Edit this README.md file on your machine.
+- [x] Run the Conda commands shown in the video and describe them in the table below.
+- [x] Push your changes to your GitHub repository.
+- [x] Submit a link to this GitHub repository in Canvas.
 
 ## 1. Fork & Clone this repository
 
@@ -37,34 +37,36 @@
 
 |   Concept   |         Description or short answer         |
 |     ---     |                     ---                     |
-|What is the purpose of having different environments?     |(enter description or short answer here)|
-|What is the default package manager in Python?            |(enter description or short answer here)|
-|How do you manage environments and packages in Anaconda?  |(enter description or short answer here)|
-|`conda list`       |(enter description or short answer here)|
-|`conda env list`       |(enter description or short answer here)|
-|How do you keep your base environment unchanged?       |(enter description or short answer here)|
-|What is the link to the Conda cheat sheet? (link in video notes is broken)      |(enter description or short answer here)|
-|`conda create --name XXXX`       |(enter description or short answer here)|
-|`source activate XXXX`       |(enter description or short answer here)|
-|`conda install YYYY`       |(enter description or short answer here)|
-|channels in Conda       |(enter description or short answer here)|
-|`conda install -c ZZZZ YYYY`       |(enter description or short answer here)|
-|`conda config --show channels`       |(enter description or short answer here)|
-|`conda config --add channels ZZZZ`       |(enter description or short answer here)|
+|What is the purpose of having different environments?     |(to accomplish different types of projects on a single computer)|
+|What is the default package manager in Python?            |(pip)|
+|How do you manage environments and packages in Anaconda?  |(by using conda)|
+|`conda list`       |(list of packages)|
+|`conda env list`       |(list of environments)|
+|How do you keep your base environment unchanged?       |(by using separate enviornments to install packages)|
+|What is the link to the Conda cheat sheet? (link in video notes is broken)      |(https://docs.conda.io/projects/conda/en/4.6.0/_downloads/52a95608c49671267e40c689e0bc00ca/conda-cheatsheet.pdf)|
+|`conda create --name XXXX`       |(ai37)|
+|`source activate XXXX`       |(ai37cond)|
+|`conda install YYYY`       |(numpy)|
+|channels in Conda       |(default, other)|
+|`conda install -c ZZZZ YYYY`       |(pytorch pytorch)|
+|`conda config --show channels`       |(defaults)|
+|`conda config --add channels ZZZZ`       |(forge)|
 |conda-forge.org       |(enter description or short answer here)|
-|`source deactivate`       |(enter description or short answer here)|
-|`conda config --get channels`       |(enter description or short answer here)|
+|`source deactivate`       |(returns to base channel)|
+|`conda config --get channels`       |(will get channels from conda forge first then defaults. this is important if you have different versions of packages. )|
 
 * After creating the environments he created in the video on your computer, what would the results of running the command `conda env list` look like with the da35 environment activated. Paste the output from your command prompt in the code block below.
 
 ```
 #Paste your results here.
-
+base                     /opt/anaconda3
+ai37                     /opt/anaconda3/envs/ai37
+da35                  *  /opt/anaconda3/envs/da35
 
 ```
 * What command would you use to remove the environments you created for this exercise from your computer?
 
 ```
-#Type the command here.
+conda env remove --name [name]
 
 ```
