@@ -51,7 +51,7 @@
 |`conda install -c ZZZZ YYYY`       |(pytorch pytorch)|
 |`conda config --show channels`       |(defaults)|
 |`conda config --add channels ZZZZ`       |(forge)|
-|conda-forge.org       |(enter description or short answer here)|
+|conda-forge.org       |(provides source for conda packages)|
 |`source deactivate`       |(returns to base channel)|
 |`conda config --get channels`       |(will get channels from conda forge first then defaults. this is important if you have different versions of packages. )|
 
